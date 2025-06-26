@@ -1,0 +1,83 @@
+.tic-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.tic-col h3 > a{
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.tic-col a:hover{
+    color: blue;
+}
+
+.tic-col span {
+    line-height: 2.3;
+    margin-left: 1.7rem;
+}
+
+.tic-col span > a{
+    color: #387ED1;
+    text-decoration: none;
+}
+
+.tic-col span > a:hover{
+    color: gray;
+}
+
+.create-container{
+    margin-bottom: 8rem;
+}
+
+/* ================================================== */
+
+.support-hero{
+    background-color: #387ED1;
+    color: white;
+}
+
+#sup-a{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.container-hero{
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+#support-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sup-h3{
+    color: white;
+}
+
+.super-links{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.quick-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0 10px;
+}
+
+.feature-li{
+    line-height: 3;
+}
+
+.feature-li a{
+    font-size: 1.1rem;
+    color: white;
+}

@@ -1,0 +1,51 @@
+.about-h2 {
+    font-size: 2.3rem;
+    color: #404040;
+    line-height: 1.5;
+}
+
+.about-container{
+    padding: 0 11rem;
+}
+
+.about-row{
+    margin-top: 7rem;
+}
+
+.about-row p{
+    font-size: 1.1rem;
+    padding: 0 1.2rem;
+    color: #2c2c2c;
+    line-height: 160%;
+}
+
+.about-row p >a{
+    text-decoration: none;
+}
+
+.Team-container{
+    padding: 0 10rem;
+}
+
+.author{
+    height: 18rem;
+    width: 18rem;
+    border-radius: 50%;
+}
+
+.team-row p{
+    font-size: 1rem;
+    color: black;
+    line-height: 1.7;
+    padding-right: 4rem;
+}
+
+.fist-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-col a{
+    text-decoration: none;
+}

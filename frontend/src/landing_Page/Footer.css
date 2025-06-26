@@ -1,0 +1,59 @@
+footer {
+    background-color: #FBFBFB;
+}
+
+.footer-container{
+    padding: 0 4rem;
+}
+
+
+.logo-f{
+    height: 1rem;
+}
+
+.logo-f + p , p{
+    font-size: 0.8rem;
+}
+
+.social-links{
+    padding: 0;
+    margin-right: 3rem;
+}
+
+.social-links li{
+    list-style: none;
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+}
+.social-links a{
+    color: black;
+    opacity: 0.6;
+}
+.social-links a:hover{
+    opacity: 1;
+    color: blue;
+}
+
+.footer-text p{
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+.footer-text a{
+    text-decoration: none;
+
+}
+
+.col-links-f h5{
+    margin-bottom: 2rem;
+}
+
+.col-links-f p > a{
+    color: black;
+    text-decoration: none;
+    opacity: 0.7;
+    font-size: 1rem;
+}
+.col-links-f p > a:hover{
+    color: blue;
+    opacity: 1;
+}

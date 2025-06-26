@@ -1,0 +1,38 @@
+.logo{
+    height: 1.1rem;
+    width: 95%;
+}
+
+.bg-body-tertiary{
+    background-color: white !important;
+}
+
+.nav-con-1{
+    padding-left: 3rem;
+    padding-right: 15rem;
+}
+
+.navbar{
+    border-bottom: 1px solid rgba(122, 122, 122, 0.132);
+    padding: 0.7rem 4rem;
+}
+
+.nav-link{
+    color: rgb(101, 101, 101) !important;
+    text-transform: capitalize;
+    padding: 0 1rem !important;
+}
+
+
+.nav-link:hover{
+    color: blue !important;
+}
+
+.navbar-nav{
+    width: 40%;
+}
+
+.fa-bars{
+    color: black;
+    margin-top: 0.3rem;
+}

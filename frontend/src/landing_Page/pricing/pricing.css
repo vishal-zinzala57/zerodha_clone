@@ -1,0 +1,46 @@
+.pricing-row{
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+}
+
+.pricing-h1{
+    font-size: 3rem;
+    color: #424242;
+}
+
+.pricing-row p{
+    color: gray;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.sec-price-row{
+    display: flex;
+    margin-top: 10rem;
+    padding: 0 7rem;
+}
+
+
+.sec-price-row img{
+    height: 12rem;
+}
+
+.h1-sec-price{
+    margin-top: 2rem;
+    color: #424242;
+    font-size: 1.9rem;
+}
+
+.p-sec-pricing{
+    font-size: 1.1rem;
+    color: rgb(94, 94, 94);
+    margin-top: 1rem;
+}
+
+.pricing-ul li{
+    margin-top: 1rem;
+}
+
+.a-tag-pricing{
+    text-decoration: none;
+}
