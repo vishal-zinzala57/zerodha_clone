@@ -19,7 +19,16 @@ app.use(cookieParser());
 
 
 
-app.use(cors());
+const cors = require('cors');
+
+app.use(cors({
+  origin: [
+    'https://zippy-concha-b090b0.netlify.app',     // frontend
+    'https://thriving-tartufo-c22ea5.netlify.app'  // dashboard
+  ],
+  credentials: true
+}));
+
 
 app.use(bodyParser.json());
 app.use(passport.initialize());
@@ -209,6 +218,11 @@ app.listen(PORT, () => {
 //     })
 //     res.send("Done!");
 // });
+
+app.get("/", (req, res) => {
+  res.send("Backend is live ✅");
+});
+
 
 app.get("/allHoldings", async (req, res) => {
     let allHoldings = await HoldingModel.find({});
