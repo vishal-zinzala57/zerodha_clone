@@ -8,11 +8,17 @@ const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allHoldings")
+    axios.get("https://zerodha-clone-laf5.onrender.com/allHoldings", {
+      withCredentials: true,
+    })
       .then((res) => {
-        setAllHoldings(res.data)
+        setAllHoldings(res.data);
       })
+      .catch((err) => {
+        console.error("Error fetching holdings:", err);
+      });
   }, []);
+
 
   const labels = allHoldings.map((subArray) => subArray["name"]);
 
@@ -21,7 +27,7 @@ const Holdings = () => {
     datasets: [
       {
         label: 'Stock price',
-        data: allHoldings.map((stock)=> stock.price),
+        data: allHoldings.map((stock) => stock.price),
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
     ]
