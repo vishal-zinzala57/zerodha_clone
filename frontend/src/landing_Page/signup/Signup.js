@@ -12,13 +12,18 @@ const Signup = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3002/api/auth/register', { email, password });
+      await axios.post('https://zerodha-clone-laf5.onrender.com/api/auth/register',
+        { email, password },
+        { withCredentials: true }
+      );
       alert("Registered! Now login.");
       navigate('/login');
     } catch (err) {
       alert("Error registering");
+      console.error(err);
     }
   };
+
 
   return (
     <form onSubmit={handleRegister}>

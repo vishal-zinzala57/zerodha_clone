@@ -10,17 +10,18 @@ function Login() {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("http://localhost:3002/api/auth/login",
+            await axios.post("https://zerodha-clone-laf5.onrender.com/api/auth/login",
                 { email, password },
-                { withCredentials: true } // important
-            )
-            navigate('/dashboard');
+                { withCredentials: true } // Keep this for cookie-based auth
+            );
+            window.location.href = 'https://zippy-concha-b090b0.netlify.app/';
         }
         catch (err) {
             console.log("the error is :", err);
             alert("Login failed");
         }
     }
+
 
     return (
         <form onSubmit={handleLogin}>
