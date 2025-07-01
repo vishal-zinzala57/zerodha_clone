@@ -12,17 +12,20 @@ const BuyActionWindow = ({ uid }) => {
   const { closeBuyWindow } = useContext(GeneralContext);
 
   const handleBuyClick = () => {
-    axios.post('http://localhost:3002/newOrder', {
+    axios.post('https://zerodha-clone-laf5.onrender.com/newOrder', {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
       mode: "BUY",
+    }, {
+      withCredentials: true
     }).then(() => {
       closeBuyWindow();
     }).catch((err) => {
       console.error("Error placing order:", err);
     });
   };
+
 
   const handleCancelClick = () => {
     closeBuyWindow();

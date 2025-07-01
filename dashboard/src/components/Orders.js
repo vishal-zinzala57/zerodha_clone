@@ -6,13 +6,17 @@ const Orders = () => {
 
   const [allOrders, setAllOrders] = useState([]);
 
-  useEffect(() => {
-    axios.get("http://localhost:3002/allorders")
+   useEffect(() => {
+    axios.get("https://zerodha-clone-laf5.onrender.com/allorders", {
+      withCredentials: true,
+    })
       .then((res) => {
         setAllOrders(res.data);
-      }, []);
-  });
-
+      })
+      .catch((err) => {
+        console.error("Error fetching orders:", err);
+      });
+  }, []);
 
   return (
 

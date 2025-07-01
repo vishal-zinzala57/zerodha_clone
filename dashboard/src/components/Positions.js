@@ -6,13 +6,17 @@ import axios from "axios";
 const Positions = () => {
   const [allPositions, setAllPositions] = useState([]);
 
-  useEffect(()=>{
-    axios.get("http://localhost:3002/allPositions")
-    .then((res)=>{
-      setAllPositions(res.data);
-    }, [])
-  })
-
+  useEffect(() => {
+    axios.get("https://zerodha-clone-laf5.onrender.com/allPositions", {
+      withCredentials: true,
+    })
+      .then((res) => {
+        setAllPositions(res.data);
+      })
+      .catch((err) => {
+        console.error("Error fetching positions:", err);
+      });
+  }, []);
 
   return (
     <>
